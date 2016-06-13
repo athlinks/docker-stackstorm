@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t athlinksengineering/stackstorm . && \
+docker build -t athlinks/stackstorm . && \
 echo "SUCCESS!"
