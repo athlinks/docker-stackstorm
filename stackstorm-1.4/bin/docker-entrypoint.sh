@@ -32,13 +32,6 @@ generate_config_files() {
 
 generate_config_files
 
-#if [ -z $ST2_SERVICE ]; then
-#  [ $# -gt 0 ] && exec "$@" || exec /bin/bash
-#else
-#  CMDARGS="${@:---config-file /etc/st2/st2.conf}"
-#  /opt/stackstorm/st2/bin/$ST2_SERVICE $CMDARGS
-#fi
-
 if [ -z $ST2_SERVICE ]; then
   echo "SET THE ST2_SERVICE ENVIRONMENT VARIABLE"
   exit 1
